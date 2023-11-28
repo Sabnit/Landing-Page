@@ -30,16 +30,6 @@ button {
   background: none;
 }
 
-.upper-container {
-  background: linear-gradient(45deg, #1b13a6 49.59%, #443cdf 88.57%), #fff;
-  padding-bottom: 175px;
-}
-
-.container-wrapper {
-  max-width: 1410px;
-  margin: 0 auto;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -64,6 +54,17 @@ header {
   background: rgba(255, 255, 255, 0.1);
   padding: 12px 24px;
   border-radius: 8px;
+}
+
+.upper-container {
+  background: linear-gradient(45deg, #1b13a6 49.59%, #443cdf 88.57%), #fff;
+  padding-bottom: 175px;
+}
+
+.container-wrapper {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 20px 50px;
 }
 
 /* heading section */
@@ -574,9 +575,16 @@ footer {
 }
 
 /* tablet */
-/* @media (min-width: 1092px) {
-  .container {
+@media (max-width: 1092px) {
+  .container-wrapper {
     max-width: 1024px;
     margin: 0 auto;
   }
-} */
+}
+
+@media screen and (max-width: 576px) {
+  .container-wrapper {
+    max-width: 436px;
+    margin: 0 auto;
+  }
+}
