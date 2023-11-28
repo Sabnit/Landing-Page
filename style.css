@@ -50,6 +50,15 @@ header {
   color: #fff;
 }
 
+.small-screen {
+  display: none;
+}
+
+.nav {
+  flex-wrap: wrap;
+  display: flex;
+}
+
 .header-nav .btn {
   background: rgba(255, 255, 255, 0.1);
   padding: 12px 24px;
@@ -64,9 +73,12 @@ header {
 .container-wrapper {
   max-width: 1410px;
   margin: 0 auto;
-  padding: 20px 50px;
+  padding: 0 50px;
 }
 
+.menu-bar figure {
+  display: flex;
+}
 /* heading section */
 
 /* section left */
@@ -135,7 +147,7 @@ header {
   gap: 52px;
 }
 
-.information h1 {
+.information span {
   color: #fff;
   font-size: 32px;
   font-weight: 600;
@@ -156,16 +168,15 @@ header {
 /* icon */
 .icon {
   background: #807cc8;
-  padding: 24px 0;
   display: flex;
 }
 
 .icon-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   align-items: center;
-  gap: 194px;
+  gap: 190px;
+  padding: 22px 0;
 }
 
 .icon-wrapper img {
@@ -240,6 +251,10 @@ header {
 
 .read-more a {
   color: var(--5-d-55-ff, #5d55ff);
+}
+
+.read-more figure {
+  display: flex;
 }
 
 /* download the app */
@@ -332,7 +347,7 @@ header {
   padding-top: 75px;
 }
 
-.guideline-upper-container h1 {
+.guideline-upper-container span {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
@@ -586,5 +601,12 @@ footer {
   .container-wrapper {
     max-width: 436px;
     margin: 0 auto;
+  }
+
+  .big-screen {
+    display: none;
+  }
+  .menu-bar {
+    display: flex;
   }
 }
